@@ -1,11 +1,11 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-    testMatch: ["tests/interactions.test.ts"],
+    testMatch: ["tests/alerts.test.ts"],
     use: {
       headless: false,
-      screenshot: "only-on-failure",
-      "video":"retain-on-failure"
+      screenshot: "on",
+      "video":"on"
     },
     retries: 1,
     reporter: [["dot"], ["json", {

@@ -12,15 +12,15 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "D:/Playwright/test-results",
+        "outputDir": "C:/Users/durob/OneDrive/Documents/Morningstar/Playwright/test-results",
         "repeatEach": 1,
         "retries": 1,
         "id": "",
         "name": "",
-        "testDir": "D:/Playwright",
+        "testDir": "C:/Users/durob/OneDrive/Documents/Morningstar/Playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/interactions.test.ts"
+          "tests/alerts.test.ts"
         ],
         "timeout": 30000
       }
@@ -47,24 +47,24 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "D:\\Playwright\\playwright.config.ts",
-    "rootDir": "D:/Playwright",
+    "configFile": "C:\\Users\\durob\\OneDrive\\Documents\\Morningstar\\Playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/durob/OneDrive/Documents/Morningstar/Playwright",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.29.1",
-    "workers": 2,
+    "version": "1.27.1",
+    "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\interactions.test.ts",
-      "file": "tests/interactions.test.ts",
+      "title": "tests\\alerts.test.ts",
+      "file": "tests/alerts.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Sum",
+          "title": "handling alerts",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,26 +78,80 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 2179,
+                  "duration": 1694,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "667\n"
+                      "text": "Enter name\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-04T12:37:49.954Z",
-                  "attachments": []
+                  "startTime": "2023-01-18T19:16:27.767Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\durob\\OneDrive\\Documents\\Morningstar\\Playwright\\test-results\\tests-alerts-handling-alerts\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\durob\\OneDrive\\Documents\\Morningstar\\Playwright\\test-results\\tests-alerts-handling-alerts\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "55c9cd1fb2a5ffce9edd-f628c1be21ee3cdd47dc",
-          "file": "tests/interactions.test.ts",
-          "line": 16,
-          "column": 5
+          "id": "addb81fc64a6c6200bbb-5d98b885c6770f54fce3",
+          "file": "tests/alerts.test.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Bootstrap modal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1864,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-01-18T19:16:29.801Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\durob\\OneDrive\\Documents\\Morningstar\\Playwright\\test-results\\tests-alerts-Bootstrap-modal\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\durob\\OneDrive\\Documents\\Morningstar\\Playwright\\test-results\\tests-alerts-Bootstrap-modal\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addb81fc64a6c6200bbb-a93cc18a0adfbdd66c31",
+          "file": "tests/alerts.test.ts",
+          "line": 21,
+          "column": 1
         }
       ]
     }
